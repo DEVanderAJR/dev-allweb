@@ -1,0 +1,12 @@
+&lt;div id="elemento"&gt;Hover me!&lt;/div&gt;
+&lt;div id="hiddenEl" style="display:none"&gt;Now I am Visible&lt;/div&gt;
+&lt;script&gt;
+    function showElement() {
+        document.getElementById("hiddenEl").style.display = "block";
+    }
+    function hideElement() {
+        document.getElementById("hiddenEl").style.display = "none";
+    }
+    document.getElementById("elemento").addEventListener("mouseover", showElement, false);
+    document.getElementById("elemento").addEventListener("mouseout", hideElement, false);
+&lt;/script&gt;
